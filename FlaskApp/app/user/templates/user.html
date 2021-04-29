@@ -1,0 +1,14 @@
+<html>
+<head>
+    <title>用户后台</title>
+    <meta charset="UTF-8">
+</head>
+    {% if status %}
+        <p>{{ status }} 登录后台成功</p>
+        <p><a href="/login/logout">退出</a></p>
+    {% else %}
+        <p>没登录请登录</p>
+        <p><a href="/login">用户登录</a></p>
+    {% endif %}
+<a href="/">返回首页</a>
+</html>
