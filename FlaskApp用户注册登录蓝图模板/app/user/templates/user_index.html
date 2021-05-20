@@ -1,0 +1,22 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>用户后台</title>
+</head>
+<body>
+    <h1>用户后台</h1>
+
+
+
+    {% if status %}
+        <p>已经登录,用户名是{{ status }}</p>
+        <p><a href="/login/logout">退出</a></p>
+    {% else %}
+        <p>未登录，请登录/注册</p>
+        <p><a href="/login">登录</a></p>
+        <p><a href="/register">注册</a></p>
+    {% endif %}
+<a href="/">返回首页</a>
+</body>
+
+</html>
